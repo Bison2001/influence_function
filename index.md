@@ -11,4 +11,5 @@ $\mathcal{I}(x_i, x_t)$ is defined as the influence of training point $x_i$ on t
 ## Equivalence between $J(\mu)$ and $L(x_t, \hat{\theta})$
 We can identify that the only difference between $J(\mu)$ in our formulation and $L(x_t, \hat{\theta_\epsilon})$ is the difference between $\hat{\theta}$. In our formulation, $\hat{\theta} = argmin_{\theta} (\sum_i\mu(x_i)*L(x_i, \theta))$. In Percy's, $\hat{\theta_\epsilon} = argmin_\theta \frac{1}{n}\sum_{i} L(z_i, \theta) + \epsilon L(z, \theta)$. So, if we let $\mu(x) = \frac{1}{n} + \epsilon$ for the target training point $x$, and $\mu(x_i) = \frac{1}{n}$ for all other training points. We will be able to build the equivalence.
 
-## Equivalence between Gateaux differential and Percy's Influence function under our formulation
+## Equivalence between PFD and Percy's Influence function under our formulation
+
